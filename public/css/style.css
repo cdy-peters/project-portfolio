@@ -1,0 +1,109 @@
+* {
+  font-family: Helvetica, Arial, sans-serif;
+  color: #333;
+  margin: 0;
+  padding: 0;
+
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+body {
+  background-color: #c7c7c7;
+  margin: 0 50px !important;
+}
+
+h4 {
+  margin-bottom: 3px;
+}
+
+.section {
+  height: 100vh;
+}
+
+.project-example {
+  margin-right: 20px;
+  width: 40%;
+  float: left;
+}
+
+.img-container {
+  display: flex;
+  justify-content: center;
+}
+
+.img-container img {
+  width: 100%;
+  border-radius: 5px;
+}
+
+.project-buttons {
+  display: flex;
+  justify-content: center;
+}
+
+.project-buttons a {
+  background-color: #333;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  margin: 5px 0;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.project-buttons a:hover {
+  background-color: #555;
+}
+
+.disabled-button {
+  background-color: #767676 !important;
+  cursor: not-allowed !important;
+}
+
+.fp-tooltip {
+  color: #333 !important;
+}
+
+@media screen and (max-width: 850px) {
+  .project-example {
+    margin-right: 0;
+    width: auto;
+    float: none;
+  }
+
+  .img-container img {
+    width: 60%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .img-container img {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  body {
+    margin: 0 20px;
+  }
+
+  h1 {
+    font-size: 1.5rem;
+  }
+
+  #fp-nav.right {
+    right: 0px !important;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .project-buttons a {
+    padding: 10px;
+  }
+}
