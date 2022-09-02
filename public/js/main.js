@@ -20,5 +20,10 @@ $(document).ready(function () {
       "online-photo-editor",
       "choropleth-timelines",
     ],
+
+    recordHistory: false,
+
+    fixedElements: "#header",
+    paddingTop: "70px",
   });
 });
