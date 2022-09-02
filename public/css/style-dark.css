@@ -120,7 +120,7 @@ h4 {
 
 .disabled-button {
   background-color: #c7c7c7 !important;
-  opacity: 0.5;
+  opacity: 0.4;
   cursor: not-allowed !important;
 }
 
