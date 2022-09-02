@@ -1,3 +1,23 @@
+// Update theme
+var currentTheme = "light";
+if (
+  window.matchMedia &&
+  window.matchMedia("(prefers-color-scheme: dark)").matches
+) {
+  currentTheme = "dark";
+  document.getElementById("css").href = "css/style-dark.css";
+}
+
+const themeHandler = () => {
+  if (currentTheme === "light") {
+    currentTheme = "dark";
+    document.getElementById("css").href = "css/style-dark.css";
+  } else {
+    currentTheme = "light";
+    document.getElementById("css").href = "css/style-light.css";
+  }
+};
+
 $(document).ready(function () {
   $("#fullpage").fullpage({
     // Navigation

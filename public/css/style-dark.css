@@ -1,0 +1,179 @@
+* {
+  font-family: Helvetica, Arial, sans-serif;
+  color: #c7c7c7;
+  margin: 0;
+  padding: 0;
+
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+/* Header */
+#header {
+  position: fixed;
+  top: 0;
+  width: calc(100% - 100px);
+  height: 70px;
+
+  display: flex;
+  justify-content: space-between;
+}
+
+#header-title {
+  display: flex;
+  align-items: center;
+}
+
+#theme-toggle,
+#header-socials {
+  display: flex;
+  align-items: center;
+  width: 50%;
+}
+
+#header-socials a {
+  margin-right: 7px;
+}
+
+#theme-toggle {
+  justify-content: flex-end;
+}
+
+#theme-toggle a,
+#header-socials a {
+  background-color: #c7c7c7;
+  color: #333;
+  border-radius: 50px;
+
+  min-width: 40px;
+  min-height: 40px;
+  width: 10vw;
+  height: 10vw;
+  max-width: 50px;
+  max-height: 50px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#theme-toggle a:hover,
+#header-socials a:hover {
+  background-color: #8d8d8d;
+  cursor: pointer;
+}
+
+#theme-toggle a i,
+#header-socials a i {
+  color: #333;
+  font-size: 20px;
+}
+
+body {
+  background-color: #333;
+  margin: 0 50px !important;
+}
+
+h4 {
+  margin-bottom: 3px;
+}
+
+.project-example {
+  margin-right: 20px;
+  width: 40%;
+  float: left;
+}
+
+.img-container {
+  display: flex;
+  justify-content: center;
+}
+
+.img-container img {
+  width: 100%;
+  border-radius: 5px;
+}
+
+.project-buttons {
+  display: flex;
+  justify-content: center;
+}
+
+.project-buttons a {
+  background-color: #c7c7c7;
+  color: #333;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  margin: 5px 0;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.project-buttons a:hover {
+  background-color: #8d8d8d;
+}
+
+.disabled-button {
+  background-color: #c7c7c7 !important;
+  opacity: 0.5;
+  cursor: not-allowed !important;
+}
+
+.fp-tooltip {
+  color: #c7c7c7 !important;
+}
+
+#fp-nav ul li a span,
+.fp-slidesNav ul li a span {
+  background-color: #c7c7c7 !important;
+}
+
+/* Media queries */
+@media screen and (max-width: 850px) {
+  #header {
+    left: 0;
+    width: 95%;
+    margin-left: 2.5%;
+  }
+
+  .project-example {
+    margin-right: 0;
+    width: auto;
+    float: none;
+  }
+
+  .img-container img {
+    width: 60%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .img-container img {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  body {
+    margin: 0 20px;
+  }
+
+  h1 {
+    font-size: 1.5rem;
+  }
+
+  #fp-nav.right {
+    right: 0px !important;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .project-buttons a {
+    padding: 10px;
+  }
+}
