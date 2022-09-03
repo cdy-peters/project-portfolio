@@ -1,0 +1,49 @@
+* {
+  color: #c7c7c7;
+}
+
+#loading {
+  background-color: #333;
+}
+
+#theme-toggle a,
+#header-socials a {
+  background-color: #c7c7c7;
+  color: #333;
+}
+
+#theme-toggle a:hover,
+#header-socials a:hover {
+  background-color: #8d8d8d;
+}
+
+#theme-toggle a i,
+#header-socials a i {
+  color: #333;
+}
+
+body {
+  background-color: #333;
+}
+
+.project-buttons a {
+  background-color: #c7c7c7;
+  color: #333;
+}
+
+.project-buttons a:hover {
+  background-color: #8d8d8d;
+}
+
+.disabled-button {
+  background-color: #c7c7c7 !important;
+}
+
+.fp-tooltip {
+  color: #c7c7c7 !important;
+}
+
+#fp-nav ul li a span,
+.fp-slidesNav ul li a span {
+  background-color: #c7c7c7 !important;
+}

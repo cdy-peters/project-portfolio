@@ -1,0 +1,49 @@
+* {
+  color: #333;
+}
+
+#loading {
+  background-color: #c7c7c7;
+}
+
+#theme-toggle a,
+#header-socials a {
+  background-color: #333;
+  color: white;
+}
+
+#theme-toggle a:hover,
+#header-socials a:hover {
+  background-color: #555;
+}
+
+#theme-toggle a i,
+#header-socials a i {
+  color: white;
+}
+
+body {
+  background-color: #c7c7c7;
+}
+
+.project-buttons a {
+  background-color: #333;
+  color: #fff;
+}
+
+.project-buttons a:hover {
+  background-color: #555;
+}
+
+.disabled-button {
+  background-color: #333 !important;
+}
+
+.fp-tooltip {
+  color: #333 !important;
+}
+
+#fp-nav ul li a span,
+.fp-slidesNav ul li a span {
+  background-color: #333 !important;
+}

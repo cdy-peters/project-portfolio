@@ -6,19 +6,19 @@ if (localStorage.getItem("theme") === null) {
 var currentTheme = localStorage.getItem("theme");
 
 if (currentTheme == "dark") {
-  document.getElementById("css").href = "css/style-dark.css";
+  document.getElementById("css").href = "css/dark.css";
 } else if (currentTheme == "light") {
-  document.getElementById("css").href = "css/style-light.css";
+  document.getElementById("css").href = "css/light.css";
 }
 
 const themeHandler = () => {
   currentTheme = localStorage.getItem("theme");
   if (currentTheme == "dark") {
     localStorage.setItem("theme", "light");
-    document.getElementById("css").href = "css/style-light.css";
+    document.getElementById("css").href = "css/light.css";
   } else if (currentTheme == "light") {
     localStorage.setItem("theme", "dark");
-    document.getElementById("css").href = "css/style-dark.css";
+    document.getElementById("css").href = "css/dark.css";
   }
 };
 
