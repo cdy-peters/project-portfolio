@@ -51,5 +51,17 @@ $(document).ready(function () {
 
     fixedElements: "#header",
     paddingTop: "70px",
+
+    onLeave: function (index, nextIndex, direction) {
+      if (index === 3) {
+        $(`#recommendations-video`).get(0).currentTime = 0;
+      } else if (index === 4) {
+        $(`#choropleth-timelines-video`).get(0).currentTime = 0;
+      } else if (index === 5) {
+        $(`#messaging-webapp-video`).get(0).currentTime = 0;
+      } else if (index === 6) {
+        $(`#online-photo-editor-video`).get(0).currentTime = 0;
+      }
+    },
   });
 });
