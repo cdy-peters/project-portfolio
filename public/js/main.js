@@ -3,7 +3,7 @@ const prefersDarkScheme = window.matchMedia("(prefers-color-scheme: dark)");
 if (localStorage.getItem("theme") === null) {
   localStorage.setItem("theme", prefersDarkScheme.matches ? "dark" : "light");
 }
-const currentTheme = localStorage.getItem("theme");
+var currentTheme = localStorage.getItem("theme");
 
 if (currentTheme == "dark") {
   document.getElementById("css").href = "css/style-dark.css";
@@ -12,6 +12,7 @@ if (currentTheme == "dark") {
 }
 
 const themeHandler = () => {
+  currentTheme = localStorage.getItem("theme");
   if (currentTheme == "dark") {
     localStorage.setItem("theme", "light");
     document.getElementById("css").href = "css/style-light.css";
