@@ -33,18 +33,18 @@ $(document).ready(function () {
       "Introduction",
       "Skills",
       "Recommendations",
+      "Choropleth Timelines",
       "Messaging Webapp",
       "Online Photo Editor",
-      "Choropleth Timelines",
     ],
 
     anchors: [
       "introduction",
       "skills",
       "recommendations",
+      "choropleth-timelines",
       "messaging-webapp",
       "online-photo-editor",
-      "choropleth-timelines",
     ],
 
     recordHistory: false,
