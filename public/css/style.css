@@ -135,11 +135,6 @@ h4 {
   text-decoration: underline;
 }
 
-.container-outer {
-  display: flex;
-  justify-content: center;
-}
-
 .project-example {
   margin: auto 20px auto 0;
   max-width: 40%;
@@ -181,6 +176,22 @@ h4 {
 
 .project-information > * {
   max-width: 700px;
+}
+
+.tech-used {
+  list-style-type: none;
+}
+
+.tech-used > li {
+  float: left;
+  padding: 5px 8px;
+  border-radius: 50px;
+  margin: 3px 3px 3px 0;
+}
+
+.project-information p {
+  clear: both;
+  margin-top: 40px;
 }
 
 /* Media queries */

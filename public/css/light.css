@@ -9,7 +9,7 @@
 #theme-toggle a,
 #header-socials a {
   background-color: #333;
-  color: white;
+  color: #c7c7c7;
 }
 
 #theme-toggle a:hover,
@@ -19,16 +19,21 @@
 
 #theme-toggle a i,
 #header-socials a i {
-  color: white;
+  color: #c7c7c7;
 }
 
 body {
   background-color: #c7c7c7;
 }
 
+.tech-used > li {
+  background-color: #333;
+  color: #c7c7c7;
+}
+
 .buttons a {
   background-color: #333;
-  color: #fff;
+  color: #c7c7c7;
 }
 
 .buttons a:hover {
