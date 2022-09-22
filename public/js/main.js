@@ -34,7 +34,20 @@ const themeHandler = () => {
   }
 };
 
+const fullscreenHandler = (section) => {
+  if (document.fullscreenElement) {
+    document.exitFullscreen();
+  } else {
+    document.getElementById(`${section}-video`).requestFullscreen();
+  }
+};
+
 $(document).ready(function () {
+  // Remove fullscreen-button on ios devices
+  if (navigator.userAgent.match(/(iPod|iPhone|iPad)/)) {
+    $(".fullscreen-button").remove();
+  }
+
   $("#loading").hide();
 
   $("#fullpage").fullpage({
