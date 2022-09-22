@@ -30,8 +30,9 @@ $(document).ready(function () {
     menu: "#menu",
     navigation: true,
     navigationTooltips: [
-      "Introduction",
-      "Skills",
+      "Landing",
+      "Who Am I?",
+      "Experience",
       "Recommendations",
       "Choropleth Timelines",
       "Messaging Webapp",
@@ -39,8 +40,9 @@ $(document).ready(function () {
     ],
 
     anchors: [
-      "introduction",
-      "skills",
+      "landing",
+      "who-am-i",
+      "experience",
       "recommendations",
       "choropleth-timelines",
       "messaging-webapp",

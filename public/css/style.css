@@ -79,12 +79,32 @@
   font-size: 20px;
 }
 
+/* Body */
 body {
   margin: 0 50px !important;
 }
 
 h4 {
   margin-bottom: 3px;
+}
+
+#who-am-i-description {
+  max-width: 800px;
+}
+
+#skills {
+  margin-left: 40px;
+  max-width: 400px;
+  -moz-column-count: 2;
+  -moz-column-gap: 20px;
+  -webkit-column-count: 2;
+  -webkit-column-gap: 20px;
+  column-count: 2;
+  column-gap: 20px;
+}
+
+#skills li {
+  margin: 5px 0;
 }
 
 .project-container {
