@@ -26,12 +26,12 @@ body {
   background-color: #c7c7c7;
 }
 
-.project-buttons a {
+.buttons a {
   background-color: #333;
   color: #fff;
 }
 
-.project-buttons a:hover {
+.buttons a:hover {
   background-color: #555;
 }
 

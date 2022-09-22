@@ -7,8 +7,14 @@ var currentTheme = localStorage.getItem("theme");
 
 if (currentTheme == "dark") {
   document.getElementById("css").href = "css/dark.css";
+  document
+    .getElementById("theme-toggle")
+    .getElementsByTagName("i")[0].classList = "bi bi-moon-fill";
 } else if (currentTheme == "light") {
   document.getElementById("css").href = "css/light.css";
+  document
+    .getElementById("theme-toggle")
+    .getElementsByTagName("i")[0].classList = "bi bi-sun-fill";
 }
 
 const themeHandler = () => {
@@ -16,9 +22,15 @@ const themeHandler = () => {
   if (currentTheme == "dark") {
     localStorage.setItem("theme", "light");
     document.getElementById("css").href = "css/light.css";
+    document
+      .getElementById("theme-toggle")
+      .getElementsByTagName("i")[0].classList = "bi bi-sun-fill";
   } else if (currentTheme == "light") {
     localStorage.setItem("theme", "dark");
     document.getElementById("css").href = "css/dark.css";
+    document
+      .getElementById("theme-toggle")
+      .getElementsByTagName("i")[0].classList = "bi bi-moon-fill";
   }
 };
 

@@ -23,11 +23,8 @@
             <a href="https://github.com/cdy-peters" target="_blank"><i class="bi bi-github"></i></a>
             <a href="https://www.linkedin.com/in/cdy-peters/" target="_blank"><i class="bi bi-linkedin"></i></a>
         </div>
-        <div id="header-title">
-            <h1>Portfolio</h1>
-        </div>
         <div id="theme-toggle">
-            <a onclick="themeHandler()"><i class="bi bi-sun-fill"></i></a>
+            <a onclick="themeHandler()"><i class="bi bi-moon-fill"></i></a>
         </div>
     </div>
 </header>
@@ -35,47 +32,68 @@
 <body>
     <div id="fullpage">
         <div class="section">
-            <h1>Hi, I'm Cody Peters</h1>
-            <h3>I'm a fullstack web developer and student at Queensland University of Technology</h3>
+            <div id="landing-title">
+                <h1>Hi, I'm Cody Peters</h1>
+                <h3>I'm a fullstack web developer and student at Queensland University of Technology</h3>
+
+                <div class="buttons">
+                    <a href="#recommendations">View my work</a>
+                </div>
+            </div>
         </div>
 
         <div class="section">
-            <h1>Who am I?</h1>
-            <p id="who-am-i-description">Having always been someone seeking answers whether it's understanding the inner
-                workings of an apparatus or sourcing a solution to a task, the inherent problem-solving as part of
-                development is an attractive prospect, for me.
-                <br><br>
-                I found a passion for development early in my secondary education. After graduating in 2021, I
-                continued to pursue this passion, learning new technologies and applying my skills to develop my own web
-                applications whilst opting to undertake a dual degree, studying Bachelor of Computer Science and
-                Bachelor of Engineering, Mechanical.
-            </p>
-            <br>
-            <p>My applicable skills, with a preference for Back-End development</p>
-            <ul id="skills">
-                <li>JavaScript</li>
-                <li>Node.js</li>
-                <li>React</li>
-                <li>SQL</li>
-                <li>Python</li>
-                <li>Flask</li>
-            </ul>
+            <div class="container-outer">
+                <div class="container-inner">
+                    <h1>Who am I?</h1>
+                    <p id="who-am-i-description">Having always been someone seeking answers whether it's understanding
+                        the inner
+                        workings of an apparatus or sourcing a solution to a task, the inherent problem-solving as part
+                        of
+                        development is an attractive prospect, for me.
+                        <br><br>
+                        I found a passion for development early in my secondary education. After graduating in 2021, I
+                        continued to pursue this passion, learning new technologies and applying my skills to develop my
+                        own web
+                        applications whilst opting to undertake a dual degree, studying Bachelor of Computer Science and
+                        Bachelor of Engineering, Mechanical.
+                    </p>
+                    <br>
+                    <p>My applicable skills, with a preference for Back-End development</p>
+                    <ul id="skills">
+                        <li>JavaScript</li>
+                        <li>Node.js</li>
+                        <li>React</li>
+                        <li>SQL</li>
+                        <li>Python</li>
+                        <li>Flask</li>
+                    </ul>
+                </div>
+            </div>
         </div>
 
         <div class="section">
-            <h1>Experience</h1>
-            <h3>Course Experience</h3>
-            <ul>
-                <li><a href="https://certificates.cs50.io/13093d40-571b-436e-82fd-879ad2955d5c.pdf?size=letter">Harvard
-                        CS50x: Introduction to Computer Science</a></li>
-                <li><a href="https://www.coursera.org/account/accomplishments/professional-cert/PYFEXVQ6UFEH">Google IT
-                        Support Professional Certificate</a></li>
-                <li><a href="https://freecodecamp.org/cdy-peters">freeCodeCamp</a></li>
-            </ul>
+            <div class="container-outer">
+                <div class="container-inner">
+                    <h1>Experience</h1>
+                    <h3>Course Experience</h3>
+                    <ul id="courses">
+                        <li><a href="https://certificates.cs50.io/13093d40-571b-436e-82fd-879ad2955d5c.pdf?size=letter"
+                                target="_blank">Harvard
+                                CS50x: Introduction to Computer Science <i class="bi bi-box-arrow-up-right"></i></a>
+                        </li>
+                        <li><a href="https://www.coursera.org/account/accomplishments/professional-cert/PYFEXVQ6UFEH"
+                                target="_blank">Google IT
+                                Support Professional Certificate <i class="bi bi-box-arrow-up-right"></i></a></li>
+                        <li><a href="https://freecodecamp.org/cdy-peters" target="_blank">freeCodeCamp <i
+                                    class="bi bi-box-arrow-up-right"></i></a></li>
+                    </ul>
+                </div>
+            </div>
         </div>
 
         <div class="section">
-            <div class="project-container">
+            <div class="container-outer">
                 <div class="project-example">
                     <div class="example-container">
                         <video id="recommendations-video" playsinline autoplay muted loop>
@@ -83,7 +101,7 @@
                             Your browser does not support the video tag.
                         </video>
                     </div>
-                    <div class="project-buttons">
+                    <div class="buttons">
                         <a class="disabled-button" style="margin-right: 5px;">Live Demo</a>
                         <a style="margin-left: 5px;" href="https://github.com/cdy-peters/recommendations"
                             target="_blank">Github Repo</a>
@@ -93,7 +111,7 @@
                     <h1>Project - Recommendations for Spotify</h1>
                     <br>
                     <h4>Technologies Used</h4>
-                    <p>Python, Flask, Spotify API</p>
+                    <p>Python, Flask, Spotify API, Socket.IO, Threading</p>
                     <br>
                     <h4>Project Purpose</h4>
                     <p>Recommendations is a web app that was built to explore the Spotify API whilst also being my first
@@ -115,7 +133,7 @@
         </div>
 
         <div class="section">
-            <div class="project-container">
+            <div class="container-outer">
                 <div class="project-example">
                     <div class="example-container">
                         <video id="choropleth-timelines-video" playsinline autoplay muted loop>
@@ -123,7 +141,7 @@
                             Your browser does not support the video tag.
                         </video>
                     </div>
-                    <div class="project-buttons">
+                    <div class="buttons">
                         <a style="margin-right: 5px;" href="https://choropleth-timelines.vercel.app/"
                             target="_blank">Live
                             Demo</a>
@@ -135,7 +153,7 @@
                     <h1>Project - Choropleth Timelines</h1>
                     <br>
                     <h4>Technologies Used</h4>
-                    <p>JavaScript</p>
+                    <p>JavaScript, D3.js</p>
                     <br>
                     <h4>Project Purpose</h4>
                     <p>Development of the Choropleth Timelines web app began after learning JavaScript, in which I also
@@ -151,7 +169,7 @@
         </div>
 
         <div class="section">
-            <div class="project-container">
+            <div class="container-outer">
                 <div class="project-example">
                     <div class="example-container">
                         <video id="messaging-webapp-video" playsinline autoplay muted loop>
@@ -159,7 +177,7 @@
                             Your browser does not support the video tag.
                         </video>
                     </div>
-                    <div class="project-buttons">
+                    <div class="buttons">
                         <a class="disabled-button" style="margin-right: 5px;">Live Demo</a>
                         <a style="margin-left: 5px;" href="https://github.com/cdy-peters/messaging-webapp"
                             target="_blank">Github Repo</a>
@@ -169,7 +187,7 @@
                     <h1>Project - Messaging Web App</h1>
                     <br>
                     <h4>Technologies Used</h4>
-                    <p>MongoDB, Express, React, Node</p>
+                    <p>MongoDB, Express, React, Node, Socket.IO</p>
                     <br>
                     <h4>Project Purpose</h4>
                     <p>Desired to switch to a more conventional tech stack from a Python based stack, I learnt the MERN
@@ -189,7 +207,7 @@
         </div>
 
         <div class="section">
-            <div class="project-container">
+            <div class="container-outer">
                 <div class="project-example">
                     <div class="example-container">
                         <video id="online-photo-editor-video" playsinline autoplay muted loop>
@@ -197,7 +215,7 @@
                             Your browser does not support the video tag.
                         </video>
                     </div>
-                    <div class="project-buttons">
+                    <div class="buttons">
                         <a style="margin-right: 5px;" href="https://online-photo-editor.vercel.app/"
                             target="_blank">Live
                             Demo</a>
@@ -209,7 +227,7 @@
                     <h1>Project - Online Photo Editor</h1>
                     <br>
                     <h4>Technologies Used</h4>
-                    <p>JavaScript</p>
+                    <p>JavaScript, GPU.js</p>
                     <br>
                     <h4>Project Purpose</h4>
                     <p>During a course, learning the basic of C, I had implemented some pixel manipulation algorithms.
