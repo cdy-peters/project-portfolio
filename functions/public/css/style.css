@@ -8,10 +8,6 @@
   scrollbar-width: none;
 }
 
-::-webkit-scrollbar {
-  display: none;
-}
-
 #loading {
   position: fixed;
   top: 0;

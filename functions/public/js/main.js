@@ -6,31 +6,24 @@ if (localStorage.getItem("theme") === null) {
 var currentTheme = localStorage.getItem("theme");
 
 if (currentTheme == "dark") {
-  document.getElementById("css").href = "css/dark.min.css";
-  document
-    .getElementById("theme-toggle")
-    .getElementsByTagName("i")[0].classList = "bi bi-moon-fill";
+  $("#css").attr('href', "css/dark.min.css");
+  $("#theme-toggle i").addClass("bi-moon-fill").removeClass("bi-sun-fill");
+
 } else if (currentTheme == "light") {
-  document.getElementById("css").href = "css/light.min.css";
-  document
-    .getElementById("theme-toggle")
-    .getElementsByTagName("i")[0].classList = "bi bi-sun-fill";
+  $("#css").attr('href', "css/light.min.css");
+  $("#theme-toggle i").addClass("bi-sun-fill").removeClass("bi-moon-fill");
 }
 
 const themeHandler = () => {
   currentTheme = localStorage.getItem("theme");
   if (currentTheme == "dark") {
     localStorage.setItem("theme", "light");
-    document.getElementById("css").href = "css/light.min.css";
-    document
-      .getElementById("theme-toggle")
-      .getElementsByTagName("i")[0].classList = "bi bi-sun-fill";
+    $("#css").attr('href', "css/light.min.css");
+    $("#theme-toggle i").addClass("bi-sun-fill").removeClass("bi-moon-fill");
   } else if (currentTheme == "light") {
     localStorage.setItem("theme", "dark");
-    document.getElementById("css").href = "css/dark.min.css";
-    document
-      .getElementById("theme-toggle")
-      .getElementsByTagName("i")[0].classList = "bi bi-moon-fill";
+    $("#css").attr('href', "css/dark.min.css");
+    $("#theme-toggle i").addClass("bi-moon-fill").removeClass("bi-sun-fill");
   }
 };
 
@@ -41,6 +34,11 @@ const fullscreenHandler = (section) => {
     document.getElementById(`${section}-video`).requestFullscreen();
   }
 };
+
+const viewWork = (e) => {
+  e.preventDefault();
+  $.fn.fullpage.moveTo(4);
+}
 
 $(document).ready(function () {
   // Remove fullscreen-button on ios devices
@@ -62,16 +60,6 @@ $(document).ready(function () {
       "Choropleth Timelines",
       "Messaging Webapp",
       "Online Photo Editor",
-    ],
-
-    anchors: [
-      "landing",
-      "who-am-i",
-      "experience",
-      "recommendations",
-      "choropleth-timelines",
-      "messaging-webapp",
-      "online-photo-editor",
     ],
 
     recordHistory: false,
