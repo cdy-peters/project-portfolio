@@ -1,6 +1,7 @@
+const functions = require("firebase-functions");
+
 const express = require("express");
 const app = express();
-const PORT = process.env.PORT || 3000;
 
 app.use(express.static(__dirname + "/public"));
 
@@ -16,6 +17,8 @@ app.get("/online-photo-editor", (req, res) => {
   res.redirect("https://online-photo-editor.vercel.app/");
 });
 
-app.listen(PORT, () => {
-  console.log(`Server listening on port ${PORT}`);
+app.get("*", (req, res) => {
+    res.redirect("/");
 });
+
+exports.app = functions.https.onRequest(app);
