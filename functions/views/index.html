@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Cody Peters' technical project portfolio; showcases development skills.">
 
     <link rel="apple-touch-icon" sizes="180x180" href="images/favicons/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="images/favicons/favicon-32x32.png">
@@ -26,11 +27,12 @@
 <header>
     <div id="header">
         <div id="header-socials">
-            <a href="https://github.com/cdy-peters" target="_blank"><i class="bi bi-github"></i></a>
-            <a href="https://www.linkedin.com/in/cdy-peters/" target="_blank"><i class="bi bi-linkedin"></i></a>
+            <a href="https://github.com/cdy-peters" target="_blank" aria-label="Github"><i class="bi bi-github"></i></a>
+            <a href="https://www.linkedin.com/in/cdy-peters/" target="_blank" aria-label="Linkedin"><i
+                    class="bi bi-linkedin"></i></a>
         </div>
         <div id="theme-toggle">
-            <a onclick="themeHandler()"><i class="bi bi-moon-fill"></i></a>
+            <button aria-label="Theme toggle" onclick="themeHandler()"><i class="bi bi-moon-fill"></i></button>
         </div>
     </div>
 </header>
@@ -41,7 +43,7 @@
             <div class="section-inner">
                 <div id="landing-title">
                     <h1>Hi, I'm Cody Peters</h1>
-                    <h3>I'm a fullstack web developer and current student at Queensland University of Technology</h3>
+                    <h2>I'm a fullstack web developer and current student at Queensland University of Technology</h2>
 
                     <div class="buttons">
                         <a onclick="viewWork(event)" href="#recommendations">View my work</a>
@@ -92,11 +94,11 @@
                 <div class="container-outer">
                     <div class="container-inner">
                         <h1>Experience</h1>
-                        <h3>Virtual Experience</h3>
+                        <h2>Virtual Experience</h2>
                         <ul class="certificates">
                             <li><a href="https://forage-uploads-prod.s3.amazonaws.com/completion-certificates/Quantium/NkaC7knWtjSbi6aYv_Quantium_ePrQiH8vSYnch2ZE8_1664207976490_completion_certificate.pdf"
-                                target="_blank">Quantium Data Analytics Experience <i
-                                    class="bi bi-box-arrow-up-right"></i></a></li>
+                                    target="_blank">Quantium Data Analytics Experience <i
+                                        class="bi bi-box-arrow-up-right"></i></a></li>
                             <li><a href="https://forage-uploads-prod.s3.amazonaws.com/completion-certificates/Quantium/jhiG2W9K8KLZK8nXP_Quantium_ePrQiH8vSYnch2ZE8_1654323977717_completion_certificate.pdf"
                                     target="_blank">Quantium Software Engineering <i
                                         class="bi bi-box-arrow-up-right"></i></a></li>
@@ -106,7 +108,7 @@
                             </li>
                         </ul>
                         <br>
-                        <h3>Course Experience</h3>
+                        <h2>Course Experience</h2>
                         <ul class="certificates">
                             <li><a href="https://certificates.cs50.io/13093d40-571b-436e-82fd-879ad2955d5c.pdf?size=letter"
                                     target="_blank">Harvard
@@ -128,15 +130,15 @@
                 <div class="container-outer">
                     <div class="project-example">
                         <div class="example-container">
-                            <button class="fullscreen-button" onclick="fullscreenHandler('recommendations')"><i
-                                    class="bi bi-fullscreen"></i></button>
+                            <button class="fullscreen-button" aria-label="Fullscreen"
+                                onclick="fullscreenHandler('recommendations')"><i class="bi bi-fullscreen"></i></button>
                             <video id="recommendations-video" playsinline autoplay muted loop>
                                 <source src="videos/recommendations.mp4" type="video/mp4">
                                 Your browser does not support the video tag.
                             </video>
                         </div>
                         <div class="buttons">
-                            <a class="disabled-button" style="margin-right: 5px;">Live Demo</a>
+                            <a class="disabled-button" href="#" style="margin-right: 5px;">Live Demo</a>
                             <a style="margin-left: 5px;" href="https://github.com/cdy-peters/recommendations"
                                 target="_blank">Github Repo</a>
                         </div>
@@ -164,7 +166,8 @@
                 <div class="container-outer">
                     <div class="project-example">
                         <div class="example-container">
-                            <button class="fullscreen-button" onclick="fullscreenHandler('choropleth-timelines')"><i
+                            <button class="fullscreen-button" aria-label="Fullscreen"
+                                onclick="fullscreenHandler('choropleth-timelines')"><i
                                     class="bi bi-fullscreen"></i></button>
                             <video id="choropleth-timelines-video" playsinline autoplay muted loop>
                                 <source src="videos/choropleth-timelines.mp4" type="video/mp4">
@@ -200,7 +203,8 @@
                 <div class="container-outer">
                     <div class="project-example">
                         <div class="example-container">
-                            <button class="fullscreen-button" onclick="fullscreenHandler('messaging-webapp')"><i
+                            <button class="fullscreen-button" aria-label="Fullscreen"
+                                onclick="fullscreenHandler('messaging-webapp')"><i
                                     class="bi bi-fullscreen"></i></button>
                             <video id="messaging-webapp-video" playsinline autoplay muted loop>
                                 <source src="videos/messaging-webapp.mp4" type="video/mp4">
@@ -208,7 +212,7 @@
                             </video>
                         </div>
                         <div class="buttons">
-                            <a class="disabled-button" style="margin-right: 5px;">Live Demo</a>
+                            <a class="disabled-button" href="#" style="margin-right: 5px;">Live Demo</a>
                             <a style="margin-left: 5px;" href="https://github.com/cdy-peters/messaging-webapp"
                                 target="_blank">Github Repo</a>
                         </div>
@@ -233,7 +237,8 @@
                 <div class="container-outer">
                     <div class="project-example">
                         <div class="example-container">
-                            <button class="fullscreen-button" onclick="fullscreenHandler('online-photo-editor')"><i
+                            <button class="fullscreen-button" aria-label="Fullscreen"
+                                onclick="fullscreenHandler('online-photo-editor')"><i
                                     class="bi bi-fullscreen"></i></button>
                             <video id="online-photo-editor-video" playsinline autoplay muted loop>
                                 <source src="videos/online-photo-editor.mp4" type="video/mp4">

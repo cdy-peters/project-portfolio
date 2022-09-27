@@ -57,8 +57,9 @@
   justify-content: flex-end;
 }
 
-#theme-toggle a,
+#theme-toggle button,
 #header-socials a {
+  border: none;
   border-radius: 50px;
 
   min-width: 40px;
@@ -73,12 +74,12 @@
   align-items: center;
 }
 
-#theme-toggle a:hover,
+#theme-toggle button:hover,
 #header-socials a:hover {
   cursor: pointer;
 }
 
-#theme-toggle a i,
+#theme-toggle button i,
 #header-socials a i {
   font-size: 20px;
 }
