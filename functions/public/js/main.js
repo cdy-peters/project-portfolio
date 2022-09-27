@@ -44,7 +44,10 @@ $(document).ready(function () {
   // Remove fullscreen-button on ios devices
   if (navigator.userAgent.match(/(iPod|iPhone|iPad)/)) {
     $(".fullscreen-button").remove();
+  } else {
+    $("video").removeAttr("controls");
   }
+
 
   $("#loading").hide();
 
@@ -67,14 +70,27 @@ $(document).ready(function () {
     fixedElements: "#header",
     paddingTop: "70px",
 
-    onLeave: function (index, nextIndex, direction) {
-      if (index === 3) {
-        $(`#recommendations-video`).get(0).currentTime = 0;
-      } else if (index === 4) {
-        $(`#choropleth-timelines-video`).get(0).currentTime = 0;
+    afterLoad: function (anchorLink, index) {
+      if (index === 4) {
+        $(`#recommendations-video`).get(0).play();
       } else if (index === 5) {
-        $(`#messaging-webapp-video`).get(0).currentTime = 0;
+        $(`#choropleth-timelines-video`).get(0).play();
       } else if (index === 6) {
+        $(`#messaging-webapp-video`).get(0).play();
+      } else if (index === 7) {
+        $(`#online-photo-editor-video`).get(0).play();
+      }
+    },
+
+    onLeave: function (index, nextIndex, direction) {
+      if (index === 4) {
+        $(`#recommendations-video`).get(0).currentTime = 0;
+      } else if (index === 5) {
+        $(`#choropleth-timelines-video`).get(0).currentTime = 0;
+      } else if (index === 6) {
+        $(`#messaging-webapp-video`).get(0).currentTime = 0;
+      } else if (index === 7) {
+
         $(`#online-photo-editor-video`).get(0).currentTime = 0;
       }
     },
