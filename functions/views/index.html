@@ -1,270 +1,407 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Cody Peters' technical project portfolio; showcases development skills."
+    />
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Cody Peters' technical project portfolio; showcases development skills.">
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="images/favicons/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="images/favicons/favicon-32x32.png"
+    />
 
-    <link rel="apple-touch-icon" sizes="180x180" href="images/favicons/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="images/favicons/favicon-32x32.png">
-
-    <link rel="stylesheet" href="css/style.min.css">
-    <link id="css" rel="stylesheet" href="css/light.min.css">
+    <link rel="stylesheet" href="css/style.min.css" />
+    <link id="css" rel="stylesheet" href="css/light.min.css" />
     <noscript>
-        <link rel="stylesheet" href="css/noscript.min.css">
+      <link rel="stylesheet" href="css/noscript.min.css" />
     </noscript>
 
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
-    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.7.6/jquery.fullPage.css'>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.7.6/jquery.fullPage.css"
+    />
 
     <title>Cody Peters - Portfolio</title>
-</head>
+  </head>
 
-<div id="loading"></div>
+  <div id="loading"></div>
 
-<header>
+  <header>
     <div id="header">
-        <div id="header-socials">
-            <a href="https://github.com/cdy-peters" target="_blank" aria-label="Github"><i class="bi bi-github"></i></a>
-            <a href="https://www.linkedin.com/in/cdy-peters/" target="_blank" aria-label="Linkedin"><i
-                    class="bi bi-linkedin"></i></a>
-        </div>
-        <div id="theme-toggle">
-            <button aria-label="Theme toggle" onclick="themeHandler()"><i class="bi bi-moon-fill"></i></button>
-        </div>
+      <div id="header-socials">
+        <a
+          href="https://github.com/cdy-peters"
+          target="_blank"
+          aria-label="Github"
+          ><i class="bi bi-github"></i
+        ></a>
+        <a
+          href="https://www.linkedin.com/in/cdy-peters/"
+          target="_blank"
+          aria-label="Linkedin"
+          ><i class="bi bi-linkedin"></i
+        ></a>
+      </div>
+      <div id="theme-toggle">
+        <button aria-label="Theme toggle" onclick="themeHandler()">
+          <i class="bi bi-moon-fill"></i>
+        </button>
+      </div>
     </div>
-</header>
+  </header>
 
-<body>
+  <body>
     <div id="fullpage">
-        <div class="section" id="landing">
-            <div class="section-inner">
-                <div id="landing-title">
-                    <h1>Hi, I'm Cody Peters</h1>
-                    <h2>I'm a fullstack web developer and current student at Queensland University of Technology</h2>
+      <div class="section" id="landing">
+        <div class="section-inner">
+          <div id="landing-title">
+            <h1>Hi, I'm Cody Peters</h1>
+            <h2>
+              I'm a fullstack web developer and current student at Queensland
+              University of Technology
+            </h2>
 
-                    <div class="buttons">
-                        <a onclick="viewWork(event)" href="#recommendations">View my work</a>
-                    </div>
-                </div>
+            <div class="buttons">
+              <a onclick="viewWork(event)" href="#recommendations"
+                >View my work</a
+              >
             </div>
+          </div>
         </div>
+      </div>
 
-        <div class="section" id="who-am-i">
-            <div class="section-inner">
-                <div class="container-outer">
-                    <div class="container-inner">
-                        <h1>Who am I?</h1>
-                        <p id="who-am-i-description">Having always been someone seeking answers whether it's
-                            understanding
-                            the inner
-                            workings of an apparatus or sourcing a solution to a task, the inherent problem-solving as
-                            part
-                            of
-                            development is an attractive prospect, for me.
-                            <br><br>
-                            I found a passion for development early in my secondary education. After graduating in 2021,
-                            I
-                            continued to pursue this passion, learning new technologies and applying my skills to
-                            develop my
-                            own web
-                            applications whilst opting to undertake a dual degree, studying Bachelor of Computer Science
-                            and
-                            Bachelor of Engineering, Mechanical.
-                        </p>
-                        <br>
-                        <p>My applicable skills, with a preference for Back-End development</p>
-                        <ul id="skills">
-                            <li>JavaScript</li>
-                            <li>Node.js</li>
-                            <li>React</li>
-                            <li>SQL</li>
-                            <li>Python</li>
-                            <li>Flask</li>
-                        </ul>
-                    </div>
-                </div>
+      <div class="section" id="who-am-i">
+        <div class="section-inner">
+          <div class="container-outer">
+            <div class="container-inner">
+              <h1>Who am I?</h1>
+              <p id="who-am-i-description">
+                Having always been someone seeking answers whether it's
+                understanding the inner workings of an apparatus or sourcing a
+                solution to a task, the inherent problem-solving as part of
+                development is an attractive prospect, for me. <br /><br />
+                I found a passion for development early in my secondary
+                education. After graduating in 2021, I continued to pursue this
+                passion, learning new technologies and applying my skills to
+                develop my own web applications whilst opting to undertake a
+                dual degree, studying Bachelor of Computer Science and Bachelor
+                of Engineering, Mechanical.
+              </p>
+              <br />
+              <p>
+                My applicable skills, with a preference for Back-End development
+              </p>
+              <ul id="skills">
+                <li>JavaScript</li>
+                <li>Node.js</li>
+                <li>React</li>
+                <li>SQL</li>
+                <li>Python</li>
+                <li>Flask</li>
+              </ul>
             </div>
+          </div>
         </div>
+      </div>
 
-        <div class="section" id="experience">
-            <div class="section-inner">
-                <div class="container-outer">
-                    <div class="container-inner">
-                        <h1>Experience</h1>
-                        <h2>Virtual Experience</h2>
-                        <ul class="certificates">
-                            <li><a href="https://forage-uploads-prod.s3.amazonaws.com/completion-certificates/Quantium/NkaC7knWtjSbi6aYv_Quantium_ePrQiH8vSYnch2ZE8_1664207976490_completion_certificate.pdf"
-                                    target="_blank">Quantium Data Analytics Experience <i
-                                        class="bi bi-box-arrow-up-right"></i></a></li>
-                            <li><a href="https://forage-uploads-prod.s3.amazonaws.com/completion-certificates/Quantium/jhiG2W9K8KLZK8nXP_Quantium_ePrQiH8vSYnch2ZE8_1654323977717_completion_certificate.pdf"
-                                    target="_blank">Quantium Software Engineering <i
-                                        class="bi bi-box-arrow-up-right"></i></a></li>
-                            <li><a href="https://forage-uploads-prod.s3.amazonaws.com/completion-certificates/Lyft/xSw9echtixLAoPdsH_Lyft_ePrQiH8vSYnch2ZE8_1654317531431_completion_certificate.pdf"
-                                    target="_blank">Lyft Back-End Engineering <i
-                                        class="bi bi-box-arrow-up-right"></i></a>
-                            </li>
-                        </ul>
-                        <br>
-                        <h2>Course Experience</h2>
-                        <ul class="certificates">
-                            <li><a href="https://certificates.cs50.io/13093d40-571b-436e-82fd-879ad2955d5c.pdf?size=letter"
-                                    target="_blank">Harvard
-                                    CS50x: Introduction to Computer Science <i class="bi bi-box-arrow-up-right"></i></a>
-                            </li>
-                            <li><a href="https://www.coursera.org/account/accomplishments/professional-cert/PYFEXVQ6UFEH"
-                                    target="_blank">Google IT
-                                    Support Professional Certificate <i class="bi bi-box-arrow-up-right"></i></a></li>
-                            <li><a href="https://freecodecamp.org/cdy-peters" target="_blank">freeCodeCamp <i
-                                        class="bi bi-box-arrow-up-right"></i></a></li>
-                        </ul>
-                    </div>
-                </div>
+      <div class="section" id="experience">
+        <div class="section-inner">
+          <div class="container-outer">
+            <div class="container-inner">
+              <h1>Experience</h1>
+              <h2>Virtual Experience</h2>
+              <ul class="certificates">
+                <li>
+                  <a
+                    href="https://forage-uploads-prod.s3.amazonaws.com/completion-certificates/Quantium/NkaC7knWtjSbi6aYv_Quantium_ePrQiH8vSYnch2ZE8_1664207976490_completion_certificate.pdf"
+                    target="_blank"
+                    >Quantium Data Analytics Experience
+                    <i class="bi bi-box-arrow-up-right"></i
+                  ></a>
+                </li>
+                <li>
+                  <a
+                    href="https://forage-uploads-prod.s3.amazonaws.com/completion-certificates/Quantium/jhiG2W9K8KLZK8nXP_Quantium_ePrQiH8vSYnch2ZE8_1654323977717_completion_certificate.pdf"
+                    target="_blank"
+                    >Quantium Software Engineering
+                    <i class="bi bi-box-arrow-up-right"></i
+                  ></a>
+                </li>
+                <li>
+                  <a
+                    href="https://forage-uploads-prod.s3.amazonaws.com/completion-certificates/Lyft/xSw9echtixLAoPdsH_Lyft_ePrQiH8vSYnch2ZE8_1654317531431_completion_certificate.pdf"
+                    target="_blank"
+                    >Lyft Back-End Engineering
+                    <i class="bi bi-box-arrow-up-right"></i
+                  ></a>
+                </li>
+              </ul>
+              <br />
+              <h2>Course Experience</h2>
+              <ul class="certificates">
+                <li>
+                  <a
+                    href="https://certificates.cs50.io/13093d40-571b-436e-82fd-879ad2955d5c.pdf?size=letter"
+                    target="_blank"
+                    >Harvard CS50x: Introduction to Computer Science
+                    <i class="bi bi-box-arrow-up-right"></i
+                  ></a>
+                </li>
+                <li>
+                  <a
+                    href="https://www.coursera.org/account/accomplishments/professional-cert/PYFEXVQ6UFEH"
+                    target="_blank"
+                    >Google IT Support Professional Certificate
+                    <i class="bi bi-box-arrow-up-right"></i
+                  ></a>
+                </li>
+                <li>
+                  <a href="https://freecodecamp.org/cdy-peters" target="_blank"
+                    >freeCodeCamp <i class="bi bi-box-arrow-up-right"></i
+                  ></a>
+                </li>
+              </ul>
             </div>
+          </div>
         </div>
+      </div>
 
-        <div class="section" id="recommendations">
-            <div class="section-inner">
-                <div class="container-outer">
-                    <div class="project-example">
-                        <div class="example-container">
-                            <button class="fullscreen-button" aria-label="Fullscreen"
-                                onclick="fullscreenHandler('recommendations')"><i class="bi bi-fullscreen"></i></button>
-                            <video id="recommendations-video" controls playsinline preload="metadata" muted loop>
-                                <source src="videos/recommendations.mp4" type="video/mp4">
-                                Your browser does not support the video tag.
-                            </video>
-                        </div>
-                        <div class="buttons">
-                            <a class="disabled-button" href="#">Live Demo</a>
-                            <a href="https://github.com/cdy-peters/recommendations" target="_blank">Github Repo</a>
-                        </div>
-                    </div>
-                    <div class="project-information">
-                        <h1>Project - Recommendations for Spotify</h1>
-                        <ul class="tech-used">
-                            <li>Python</li>
-                            <li>Flask</li>
-                            <li>Spotify API</li>
-                            <li>Socket.IO</li>
-                        </ul>
-                        <p>Recommendations is a web app that provides users with accurate song recommendations based on
-                            a
-                            selected playlist. Songs are recommended based on the characteristics of the 'average song'
-                            in
-                            the playlist as provided by the Spotify API.</p>
-                    </div>
-                </div>
+      <div class="section" id="recommendations">
+        <div class="section-inner">
+          <div class="container-outer">
+            <div class="project-example">
+              <div class="example-container">
+                <button
+                  class="fullscreen-button"
+                  aria-label="Fullscreen"
+                  onclick="fullscreenHandler('recommendations')"
+                >
+                  <i class="bi bi-fullscreen"></i>
+                </button>
+                <video
+                  id="recommendations-video"
+                  controls
+                  playsinline
+                  preload="metadata"
+                  muted
+                  loop
+                >
+                  <source src="videos/recommendations.mp4" type="video/mp4" />
+                  Your browser does not support the video tag.
+                </video>
+              </div>
+              <div class="buttons">
+                <a class="disabled-button" href="#">Live Demo</a>
+                <a
+                  href="https://github.com/cdy-peters/recommendations"
+                  target="_blank"
+                  >Github Repo</a
+                >
+              </div>
             </div>
+            <div class="project-information">
+              <h1>Project - Recommendations for Spotify</h1>
+              <ul class="tech-used">
+                <li>TypeScript</li>
+                <li>Angular</li>
+                <li>Spotify API</li>
+              </ul>
+              <p>
+                Recommendations is a web app that provides users with accurate
+                song recommendations based on a selected playlist. Songs are
+                recommended based on the characteristics of the 'average song'
+                in the playlist as provided by the Spotify API.
+              </p>
+            </div>
+          </div>
         </div>
+      </div>
 
-        <div class="section" id="choropleth-timelines">
-            <div class="section-inner">
-                <div class="container-outer">
-                    <div class="project-example">
-                        <div class="example-container">
-                            <button class="fullscreen-button" aria-label="Fullscreen"
-                                onclick="fullscreenHandler('choropleth-timelines')"><i
-                                    class="bi bi-fullscreen"></i></button>
-                            <video id="choropleth-timelines-video" controls playsinline preload="metadata" muted loop>
-                                <source src="videos/choropleth-timelines.mp4" type="video/mp4">
-                                Your browser does not support the video tag.
-                            </video>
-                        </div>
-                        <div class="buttons">
-                            <a href="https://choropleth-timelines.vercel.app/" target="_blank">Live
-                                Demo</a>
-                            <a href="https://github.com/cdy-peters/choropleth-timelines" target="_blank">Github Repo</a>
-                        </div>
-                    </div>
-                    <div class="project-information">
-                        <h1>Project - Choropleth Timelines</h1>
-                        <ul class="tech-used">
-                            <li>JavaScript</li>
-                            <li>D3.js</li>
-                        </ul>
-                        <p>Choropleth Timelines visualizes, on a choropleth, global data for a selected dataset. The web
-                            app
-                            allows for viewing of a historical timeline of data where users can select past dates or,
-                            scrub
-                            through the individual days provided by the dataset.</p>
-                    </div>
-                </div>
+      <div class="section" id="choropleth-timelines">
+        <div class="section-inner">
+          <div class="container-outer">
+            <div class="project-example">
+              <div class="example-container">
+                <button
+                  class="fullscreen-button"
+                  aria-label="Fullscreen"
+                  onclick="fullscreenHandler('choropleth-timelines')"
+                >
+                  <i class="bi bi-fullscreen"></i>
+                </button>
+                <video
+                  id="choropleth-timelines-video"
+                  controls
+                  playsinline
+                  preload="metadata"
+                  muted
+                  loop
+                >
+                  <source
+                    src="videos/choropleth-timelines.mp4"
+                    type="video/mp4"
+                  />
+                  Your browser does not support the video tag.
+                </video>
+              </div>
+              <div class="buttons">
+                <a
+                  href="https://choropleth-timelines.vercel.app/"
+                  target="_blank"
+                  >Live Demo</a
+                >
+                <a
+                  href="https://github.com/cdy-peters/choropleth-timelines"
+                  target="_blank"
+                  >Github Repo</a
+                >
+              </div>
             </div>
+            <div class="project-information">
+              <h1>Project - Choropleth Timelines</h1>
+              <ul class="tech-used">
+                <li>JavaScript</li>
+                <li>D3.js</li>
+              </ul>
+              <p>
+                Choropleth Timelines visualizes, on a choropleth, global data
+                for a selected dataset. The web app allows for viewing of a
+                historical timeline of data where users can select past dates
+                or, scrub through the individual days provided by the dataset.
+              </p>
+            </div>
+          </div>
         </div>
+      </div>
 
-        <div class="section" id="messaging-webapp">
-            <div class="section-inner">
-                <div class="container-outer">
-                    <div class="project-example">
-                        <div class="example-container">
-                            <button class="fullscreen-button" aria-label="Fullscreen"
-                                onclick="fullscreenHandler('messaging-webapp')"><i
-                                    class="bi bi-fullscreen"></i></button>
-                            <video id="messaging-webapp-video" controls playsinline preload="metadata" muted loop>
-                                <source src="videos/messaging-webapp.mp4" type="video/mp4">
-                                Your browser does not support the video tag.
-                            </video>
-                        </div>
-                        <div class="buttons">
-                            <a class="disabled-button" href="#">Live Demo</a>
-                            <a href="https://github.com/cdy-peters/messaging-webapp" target="_blank">Github Repo</a>
-                        </div>
-                    </div>
-                    <div class="project-information">
-                        <h1>Project - Messaging Web App</h1>
-                        <ul class="tech-used">
-                            <li>MongoDB</li>
-                            <li>Express.js</li>
-                            <li>React</li>
-                            <li>Node.js</li>
-                            <li>Socket.IO</li>
-                        </ul>
-                        <p>A messaging web app that allows for instant messaging between registered users.</p>
-                    </div>
-                </div>
+      <div class="section" id="messaging-webapp">
+        <div class="section-inner">
+          <div class="container-outer">
+            <div class="project-example">
+              <div class="example-container">
+                <button
+                  class="fullscreen-button"
+                  aria-label="Fullscreen"
+                  onclick="fullscreenHandler('messaging-webapp')"
+                >
+                  <i class="bi bi-fullscreen"></i>
+                </button>
+                <video
+                  id="messaging-webapp-video"
+                  controls
+                  playsinline
+                  preload="metadata"
+                  muted
+                  loop
+                >
+                  <source src="videos/messaging-webapp.mp4" type="video/mp4" />
+                  Your browser does not support the video tag.
+                </video>
+              </div>
+              <div class="buttons">
+                <a class="disabled-button" href="#">Live Demo</a>
+                <a
+                  href="https://github.com/cdy-peters/messaging-webapp"
+                  target="_blank"
+                  >Github Repo</a
+                >
+              </div>
             </div>
+            <div class="project-information">
+              <h1>Project - Messaging Web App</h1>
+              <ul class="tech-used">
+                <li>MongoDB</li>
+                <li>Express.js</li>
+                <li>React</li>
+                <li>Node.js</li>
+                <li>Socket.IO</li>
+              </ul>
+              <p>
+                A messaging web app that allows for instant messaging between
+                registered users.
+              </p>
+            </div>
+          </div>
         </div>
+      </div>
 
-        <div class="section" id="online-photo-editor">
-            <div class="section-inner">
-                <div class="container-outer">
-                    <div class="project-example">
-                        <div class="example-container">
-                            <button class="fullscreen-button" aria-label="Fullscreen"
-                                onclick="fullscreenHandler('online-photo-editor')"><i
-                                    class="bi bi-fullscreen"></i></button>
-                            <video id="online-photo-editor-video" controls playsinline preload="metadata" muted loop>
-                                <source src="videos/online-photo-editor.mp4" type="video/mp4">
-                                Your browser does not support the video tag.
-                            </video>
-                        </div>
-                        <div class="buttons">
-                            <a href="https://online-photo-editor.vercel.app/" target="_blank">Live
-                                Demo</a>
-                            <a href="https://github.com/cdy-peters/online-photo-editor" target="_blank">Github Repo</a>
-                        </div>
-                    </div>
-                    <div class="project-information">
-                        <h1>Project - Online Photo Editor</h1>
-                        <ul class="tech-used">
-                            <li>JavaScript</li>
-                            <li>WebGL</li>
-                        </ul>
-                        <p>An online photo editor that provides filters, light and color adjustments,
-                            detail adjustments and effects.</p>
-                    </div>
-                </div>
+      <div class="section" id="online-photo-editor">
+        <div class="section-inner">
+          <div class="container-outer">
+            <div class="project-example">
+              <div class="example-container">
+                <button
+                  class="fullscreen-button"
+                  aria-label="Fullscreen"
+                  onclick="fullscreenHandler('online-photo-editor')"
+                >
+                  <i class="bi bi-fullscreen"></i>
+                </button>
+                <video
+                  id="online-photo-editor-video"
+                  controls
+                  playsinline
+                  preload="metadata"
+                  muted
+                  loop
+                >
+                  <source
+                    src="videos/online-photo-editor.mp4"
+                    type="video/mp4"
+                  />
+                  Your browser does not support the video tag.
+                </video>
+              </div>
+              <div class="buttons">
+                <a
+                  href="https://online-photo-editor.vercel.app/"
+                  target="_blank"
+                  >Live Demo</a
+                >
+                <a
+                  href="https://github.com/cdy-peters/online-photo-editor"
+                  target="_blank"
+                  >Github Repo</a
+                >
+              </div>
             </div>
+            <div class="project-information">
+              <h1>Project - Online Photo Editor</h1>
+              <ul class="tech-used">
+                <li>JavaScript</li>
+                <li>WebGL</li>
+              </ul>
+              <p>
+                An online photo editor that provides filters, light and color
+                adjustments, detail adjustments and effects.
+              </p>
+            </div>
+          </div>
         </div>
+      </div>
     </div>
 
-    <script src="https://code.jquery.com/jquery-3.6.1.min.js"
-        integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
-    <script src='https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.7.6/jquery.fullPage.min.js'></script>
+    <script
+      src="https://code.jquery.com/jquery-3.6.1.min.js"
+      integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ="
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.7.6/jquery.fullPage.min.js"></script>
     <script src="js/main.min.js" crossorigin="anonymous"></script>
-</body>
-
+  </body>
 </html>
