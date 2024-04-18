@@ -6,11 +6,10 @@ if (localStorage.getItem("theme") === null) {
 var currentTheme = localStorage.getItem("theme");
 
 if (currentTheme == "dark") {
-  $("#css").attr('href', "css/dark.min.css");
+  $("#css").attr("href", "css/dark.min.css");
   $("#theme-toggle i").addClass("bi-moon-fill").removeClass("bi-sun-fill");
-
 } else if (currentTheme == "light") {
-  $("#css").attr('href', "css/light.min.css");
+  $("#css").attr("href", "css/light.min.css");
   $("#theme-toggle i").addClass("bi-sun-fill").removeClass("bi-moon-fill");
 }
 
@@ -18,11 +17,11 @@ const themeHandler = () => {
   currentTheme = localStorage.getItem("theme");
   if (currentTheme == "dark") {
     localStorage.setItem("theme", "light");
-    $("#css").attr('href', "css/light.min.css");
+    $("#css").attr("href", "css/light.min.css");
     $("#theme-toggle i").addClass("bi-sun-fill").removeClass("bi-moon-fill");
   } else if (currentTheme == "light") {
     localStorage.setItem("theme", "dark");
-    $("#css").attr('href', "css/dark.min.css");
+    $("#css").attr("href", "css/dark.min.css");
     $("#theme-toggle i").addClass("bi-moon-fill").removeClass("bi-sun-fill");
   }
 };
@@ -38,7 +37,7 @@ const fullscreenHandler = (section) => {
 const viewWork = (e) => {
   e.preventDefault();
   $.fn.fullpage.moveTo(4);
-}
+};
 
 $(document).ready(function () {
   // Remove fullscreen-button on ios devices
@@ -48,7 +47,6 @@ $(document).ready(function () {
     $("video").removeAttr("controls");
   }
 
-
   $("#loading").hide();
 
   $("#fullpage").fullpage({
@@ -56,9 +54,6 @@ $(document).ready(function () {
     menu: "#menu",
     navigation: true,
     navigationTooltips: [
-      "Landing",
-      "Who Am I?",
-      "Experience",
       "Recommendations",
       "Choropleth Timelines",
       "Messaging Webapp",
@@ -90,7 +85,6 @@ $(document).ready(function () {
       } else if (index === 6) {
         $(`#messaging-webapp-video`).get(0).currentTime = 0;
       } else if (index === 7) {
-
         $(`#online-photo-editor-video`).get(0).currentTime = 0;
       }
     },
