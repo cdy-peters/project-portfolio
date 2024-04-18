@@ -1,0 +1,62 @@
+* {
+  color: #333;
+}
+
+::-webkit-scrollbar {
+  background-color: #c7c7c7;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #c7c7c7;
+}
+
+#loading {
+  background-color: #c7c7c7;
+}
+
+#theme-toggle button,
+#header-socials a {
+  background-color: #333;
+  color: #c7c7c7;
+}
+
+#theme-toggle button:hover,
+#header-socials a:hover {
+  background-color: #555;
+}
+
+#theme-toggle button i,
+#header-socials a i {
+  color: #c7c7c7;
+}
+
+body {
+  background-color: #c7c7c7;
+}
+
+.tech-used > li {
+  background-color: #333;
+  color: #c7c7c7;
+}
+
+.buttons a {
+  background-color: #333;
+  color: #c7c7c7;
+}
+
+.buttons a:hover {
+  background-color: #555;
+}
+
+.disabled-button {
+  background-color: #333 !important;
+}
+
+.fp-tooltip {
+  color: #333 !important;
+}
+
+#fp-nav ul li a span,
+.fp-slidesNav ul li a span {
+  background-color: #333 !important;
+}
